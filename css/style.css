@@ -1,0 +1,326 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif ;
+    background-image: url(../assets/Imagen\ fondo.avif);
+    color: white;
+     margin: 10px;
+}
+.box {
+    width: 100%;
+    height:100%;
+    border: 1px solid white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+.box div {
+    z-index: 3;
+    background-color: #111;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    opacity: 0.5;
+}
+
+.b1 {
+    grid-area: a1;
+}
+
+.b2 {
+    grid-area: a2;
+}
+
+.b3 {
+    grid-area: a3;
+}
+
+.b4 {
+    grid-area: a4;
+}
+
+.b5 {
+    grid-area: a5;
+}
+
+.b6 {
+    grid-area: a6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4 200px);
+    grid-template-rows: repeat(3, 300px) ;
+    gap: 10px;
+    place-items: end center;
+    grid-template-areas: 
+    'a6 a6 a3 a3'
+    'a4 a2 a3 a3'
+    'a1 a1 a5 a5';
+}
+
+.container-if {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    width: 800px;
+    height: 200px;
+}
+.container-m {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas:
+    'Surf Surf'
+    'Trekking Navegacion';
+    gap: 10px;
+    padding: 10px;
+}
+
+.box-  {
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    min-height: 250px
+}
+
+.m1, img {
+    grid-area: Surf;
+    background-image: url(../assets/Surf\ imagen\ fondo.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+    gap: 5px;
+ }
+
+.m2, img {
+    grid-area: Trekking;
+    background-image: url(../assets/Trekking\ fondo.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+.m3, img {
+    grid-area: Navegacion;
+    background-image: url(../assets/navegacion\ fondo.avif);
+    background-size: cover;
+    background-attachment: fixed;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+}
+
+
+@media ( max-width:1024px) {
+    .box- {
+        background-color: rgb(238, 137, 15);
+        color: #111;
+    }
+}
+
+@media ( max-width:768px) {
+    .container-m {
+        grid-template-areas:
+        'Trekking Surf'
+        'Navegacion Surf' ;
+    }
+}
+
+@media ( max-width:480px) {
+    .container-m {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.nav-list {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 13, 13);
+    color: #04eeff;
+    gap: 10px;
+    padding-top: 20px;
+    padding-left: 55%;
+    padding-left: 55%;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+ul, li {
+    text-align: center;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+a {
+    color: rgb(250, 247, 247);
+    text-decoration: none; 
+}
+a:hover {
+    color: aqua;
+}
+h4 {
+    color: rgb(5, 5, 5);
+    text-align: center; 
+}
+
+.pseudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+    margin: 20px;
+}
+
+
+.bot {
+    display: flex;
+    width: 700px;
+    background-image: url(../assets/images/Ola\ cambiar.jpeg);
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 5%;
+    gap: 15px;
+    margin: 20px;
+}
+
+
+.bot-content {
+    display: flex;
+    flex-direction:column;
+    color:rgb(70, 67, 67);
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin:20px ;
+}
+.bot:hover {
+    background-image: url(../assets/playa\ la\ hafte\ haiti.avif);
+    box-shadow: 3px 3px 13px 5px rgb(7, 6, 6);
+}
+
+.bot img {
+    width: 50%;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+.card-container {
+    padding: 10px;
+    background-color: blanchedalmond;
+    color: #111;
+    border: 5px solid rgb(15, 12, 12);
+    border-radius: 5%;
+    border-color: rgb(245, 244, 242);
+    width: 500px;
+    height: 100%;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.card-container img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+    gap: 25px;
+    
+}
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+.card-footer a {
+    background-color: blanchedalmond;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 49%;
+}
+button {
+    background-color: rgb(241, 247, 248);
+    color: rgb(14, 12, 12);
+    width: 70px;
+    height: 30px; 
+    align-self: flex-end;
+}
+
+
+
+
+
+.Volver {
+    text-align: right;
+
+}
+
+.barras {
+   background-color: rgb(241, 238, 238);
+   padding: 25px 45px;
+   text-decoration: aqua;
+}
+
+.hero-container {
+    margin-top: 20px;
+}
+
+.hero-card {
+    display: flex;
+}
+
+.hero-card img {
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+}
+.hero-card-content {
+    background-color: blanchedalmond;
+    color: black;
+    text-decoration-color:#111;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+
