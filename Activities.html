@@ -9,22 +9,61 @@
 </head>
 <body>
     <header>
-        <nav>
-        <h1>AgenciaRivers</h1>
-            <ul class="nav-list">
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="Beach.html">Beachs</a></li>
-                <li> <a href="Mountains.html">Mountains</a></li>
-                <li> <a href="Glaciers.html">Glaciers</a></li>
-                <li> <a href="Activities.html">Activities</a></li>
-                <li> <a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AgenciaRivers</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Beach.html"> Beach</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Mountains.html"> Mountains</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Glaciers.html"> Glaciers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html"> Contact</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Activities
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Activities.html/juegos-de-surf">Surf</a></li>
+                        <li><a class="dropdown-item" href="Activities.html">Trekking</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Activities.html">Navegacion</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
     <hr> 
 
 <section class="container-m">
-    <article class="box- m1">
+    <article class="box-m1">
         <h2>Surf</h2>
         <p>
         Lorem ipsum scipit harum adipisci, est quidem nisi animi expedita quae. Perspiciatis illo rerum voluptate culpa asperiores doloremque, voluptatibus delectus veritatis fugiat voluptates officia totam nostrum, sed dolorum exercitationem possimus debitis aut doloribus tempora eveniet quo cum et! Debitis!
@@ -34,7 +73,7 @@
         
       </div>
     </article>
-    <article class="box- m2">
+    <article class="box-m2">
             <h2>Trekking</h2>
            <p>
             Lorem ipsum dolor rspiciatis illo rerum voluptate culpa asperiores doloremque, voluptatibus delectus veritatis fugiat voluptates officia totam nostrum, sed dolorum exercitationem possimus debitis aut doloribus tempora eveniet quo cum et! Debitis!
@@ -42,7 +81,7 @@
            <div class="d-grid gap-5 col-3 mx-5">
             <a href="https://as.com/meristation/plataformas/computadora-personal/top/videojuegos-aventura/2023/" class="btn btn-primary" type="button">Juga!</a>
     </article>
-    <article class="box- m3">
+    <article class="box-m3">
             <h2>Navegacion</h2>
            <p>
             Lorem ipsum  suscipit harum adipisci, est quidem nisi animi expedita quae. Perspiciatis illo rerum voluptate culpa asperiores doloremque, voluptatibus delectus veritatis fugiat voluptates officia totam nostrum, sed dolorum exercitationem possimus debitis aut doloribus tempora eveniet quo cum et! Debitis!

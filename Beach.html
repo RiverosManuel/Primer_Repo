@@ -3,79 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Beach</title>
 </head>
 <body>
     <header>
-        <nav>
-        <h1>AgenciaRivers</h1>
-            <ul class="nav-list">
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="Beach.html">Beachs</a></li>
-                <li> <a href="Mountains.html">Mountains</a></li>
-                <li> <a href="Glaciers.html">Glaciers</a></li>
-                <li> <a href="Activities.html">Activities</a></li>
-                <li> <a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr> 
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AgenciaRivers</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Beach.html"> Beach</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Mountains.html"> Mountains</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Glaciers.html"> Glaciers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html"> Contact</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Activities
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Activities.html/juegos-de-surf">Surf</a></li>
+                        <li><a class="dropdown-item" href="Activities.html">Trekking</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Activities.html">Navegacion</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
     
-  <section class="grid">
-    <article class="box b1">
-        <div>
-            <h2> McWays Falls</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore doloremque veniam ipsa adipisci corporis! Deserunt perferendis libero accusamus et?</p>
-            <a href="https://www.google.com/maps/place/McWay+Falls/@36.1579022,-121.6768872,17z/data=!3m1!4b1!4m6!3m5!1s0x808d803496d56575:0x6668b96e4335c2f5!8m2!3d36.1578259!4d-121.6721628!16s%2Fm%2F03gyz90?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Beach.html">Beach</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Mountains.html">Mountains</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Glaciers.html">Glaciers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Activities.html">Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        </header>
+    
+    <div class="card-group">
+        <div class="card">
+          <img src="assets/playa la hafte haiti.avif" class="card-img-top" alt="...">
+          <div class="card-body" style="margin:10px; background-color:chocolate">
+            <h5 class="card-title">Playa la Hafte, Haiti</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque maiores a voluptatem! Totam sit ipsum hic molestiae, aspernatur reiciendis vel dignissimos, doloribus exercitationem nostrum in cupiditate aliquid provident neque accusamus! Mollitia vel possimus voluptatem porro sequi laboriosam ducimus repellat inventore quas adipisci eligendi nesciunt corporis voluptas optio quod, deleniti dicta unde dolores suscipit quia autem earum molestias at? Non repellat sed porro id quis expedita ducimus neque in maiores labore quia maxime dolorum quisquam, nesciunt, blanditiis eius officia doloribus laboriosam distinctio fugit. Id ea error quaerat reiciendis quis expedita magnam nam asperiores facilis corporis placeat architecto provident, delectus possimus fugit necessitatibus quo temporibus, nostrum tenetur. Dignissimos tempora, corrupti quam tempore deleniti consequatur molestiae, ipsa, voluptates laborum beatae fugit reiciendis!</p>
+            <a href="https://www.google.com/maps/place/Cocoyer+Beach/@18.9196337,-74.1552625,8z/data=!4m10!1m2!2m1!1splayas+haiti!3m6!1s0x8eb83ecd3265127f:0x44df1b0cb13d1120!8m2!3d18.466143!4d-72.993521!15sCgxwbGF5YXMgaGFpdGmSAQViZWFjaOABAA!16s%2Fg%2F11ddxt82xf?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+          </div>
         </div>
-        <img src="assets/images/Playa 1 Beach.avif">
-        </article>
-    <article class="box b2">
-        <div>
-            <h2>Playa de Manly</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
-            <a href="https://www.google.com/maps/place/Playa+de+Manly/@-33.7964693,151.2838309,16z/data=!3m1!4b1!4m6!3m5!1s0x6b12ab09219bcc2b:0xa97f26bebad87850!8m2!3d-33.7931501!4d151.2876488!16zL20vMDQycV81?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+        <div class="card">
+          <img src="assets/playa maldivas.avif" class="card-img-top" alt="...">
+          <div class="card-body" style="margin: 10px; background-color:chocolate">
+            <h5 class="card-title" >Playa Islas Maldivas</h5>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia commodi similique velit, neque inventore vitae consequatur sequi architecto necessitatibus</p>
+            <a href="https://www.google.com/maps/place/Bikini+Beach/@4.2606514,72.4641037,10z/data=!4m10!1m2!2m1!1splaya+islas+maldivas!3m6!1s0x3b4059348fe163ad:0x5ce7decc324ea360!8m2!3d4.2606407!4d72.9914056!15sChRwbGF5YSBpc2xhcyBtYWxkaXZhc1oWIhRwbGF5YSBpc2xhcyBtYWxkaXZhc5IBBWJlYWNomgEjQ2haRFNVaE5NRzluUzBWSlEwRm5TVU54ZGxwZmFVWm5FQUXgAQA!16s%2Fg%2F1ptx3xlmr?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
         </div>
-        <img src="assets/images/Playa barquito.avif">
-    </article>
-    <article class="box b3">
-        <div>
-            <h2>Playa Culebra</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
-            <a href="https://www.google.com/maps/place/Playa+Culebra/@-13.8422211,-76.4028218,14z/data=!3m1!4b1!4m6!3m5!1s0x91107e9215e57e47:0x90ee0e343938b429!8m2!3d-13.8422222!4d-76.3822222!16s%2Fg%2F12ltbv6qx?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
         </div>
-        <img src="assets/images/playa 3.avif">
-    </article>
-    <article class="box b4">
-        <div>
-            <h2>Playa Maldivas</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
-            <a href="https://www.google.com/maps/place/Bikini+Beach/@3.0392343,70.5608125,7z/data=!4m10!1m2!2m1!1splaya+maldivas!3m6!1s0x3b4059348fe163ad:0x5ce7decc324ea360!8m2!3d4.2606407!4d72.9914056!15sCg5wbGF5YSBtYWxkaXZhc1oQIg5wbGF5YSBtYWxkaXZhc5IBBWJlYWNomgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5IZWpVMlQxOW5SUkFC4AEA!16s%2Fg%2F1ptx3xlmr?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+        <div class="card">
+          <img src="assets/playa trinidad y tobago.avif" class="card-img-top" alt="...">
+          <div class="card-body" style="margin: 10px; background-color: chocolate;">
+            <h5 class="card-title">Playa Trinidad y Tobago</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem saepe minus veniam aliquam temporibus provident, consequuntur laborum? Nesciunt illo, tenetur inventore quasi consequuntur saepe dolor in impedit aspernatur quibusdam nihil atque voluptatum dolorem id? Dicta, pariatur provident iure quae dolores enim nostrum perferendis aperiam, quam numquam delectus nisi at vitae reprehenderit? Veritatis, quia! Quod debitis quam provident, ad et odio esse officia, voluptas voluptatem animi aperiam. Ab sint nulla provident accusamus officiis quasi magnam, labore in natus sit commodi illum facilis, blanditiis ipsam quam. Eos saepe neque dolorum, nesciunt numquam magni aliquid illo expedita, eius voluptates facilis nulla at voluptate provident nisi voluptatem impedit rerum, a optio perferendis omnis. Quidem magnam impedit hic, totam nobis beatae laudantium reiciendis libero accusamus?</p>
+            <a href="https://www.google.com/maps/place/Pirate's+Bay/@10.7658444,-61.7618505,9z/data=!4m10!1m2!2m1!1splaya+de+trinidad+y+tobago!3m6!1s0x8c48f84513cc5223:0x8a37c491838f0751!8m2!3d11.3290426!4d-60.5490017!15sChpwbGF5YSBkZSB0cmluaWRhZCB5IHRvYmFnb5IBBWJlYWNo4AEA!16s%2Fg%2F1ptwn0ttr?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
         </div>
-        <img src="assets/playa maldivas.avif">
-    </article>
-    <article class="box b5">
-        <div>
-            <h2>Playa TyT</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
-            <a href="https://www.google.com/maps/place/Playa+de+Cedros/@10.0942034,-61.8595166,17z/data=!3m1!4b1!4m6!3m5!1s0x8c35a73fbe05c8b7:0xd6fa6737669ee40b!8m2!3d10.0941981!4d-61.8569417!16s%2Fg%2F11jjk6zs76?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
         </div>
-        <img src="assets/playa trinidad y tobago.avif">
-    </article>
-    <article class="box b6">
-        <div>
-            <h2>La Hafte</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
-            <a href="https://www.google.com/maps/place/Cocoyer+Beach/@18.987088,-74.076711,8z/data=!4m10!1m2!2m1!1splaya+haiti!3m6!1s0x8eb83ecd3265127f:0x44df1b0cb13d1120!8m2!3d18.466143!4d-72.993521!15sCgtwbGF5YSBoYWl0aZIBBWJlYWNo4AEA!16s%2Fg%2F11ddxt82xf?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
-        </div>
-        <img src="assets/playa la hafte haiti.avif">
-    </article>
-   </section>
+      </div>
 
-   <article class="container-if">
-    <iframe class="VideoPlaya" width="560" height="315" src="https://www.youtube.com/embed/b6XpL7rCBKc?si=7JIQlV_ICJC-XpoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-   </article>
-   
+      <div class="card-group" style="margin-top: 30px;">
+        <div class="card">
+          <img src="assets/images/Playa barquito.avif" class="card-img-top" alt="...">
+          <div class="card-body" style="margin: 10px; background-color: rgb(250, 248, 246);">
+            <h5 class="card-title">Playa de Manly</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer" style="background-color: rgb(5, 5, 5);">
+            <a href="https://www.google.com/maps/place/Playa+de+Manly/@-33.7964591,151.2705268,15z/data=!3m1!4b1!4m6!3m5!1s0x6b12ab09219bcc2b:0xa97f26bebad87850!8m2!3d-33.7931501!4d151.2876488!16zL20vMDQycV81?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 50px;">
+          <img src="assets/images/playa 3.avif" class="card-img-top" alt="...">
+          <div class="card-body" style="margin: 10px; background-color: rgb(248, 248, 247);">
+            <h5 class="card-title">Playa Culebra</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer" style="background-color:rgb(3, 3, 3); ;">
+            <a href="https://www.google.com/maps/place/Culebrita+Beach/@18.3091277,-65.362699,12z/data=!4m10!1m2!2m1!1splaya+culebra+puerto+rico!3m6!1s0x8c04e68fed768407:0xd85b390d1bb3c68a!8m2!3d18.3174559!4d-65.2276561!15sChlwbGF5YSBjdWxlYnJhIHB1ZXJ0byByaWNvkgEFYmVhY2jgAQA!16s%2Fg%2F1tff_jzg?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+          </div>
+        </div>
+        <div class="card" style="margin-top: 50px;">
+          <img src="assets/images/Playa 1 Beach.avif" class="card-img-top" alt="...">
+          <div class="card-body" style=" margin: 10px; background-color:rgb(248, 248, 247)">
+            <h5 class="card-title">McWays Falls</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer" style="background-color:rgb(3, 3, 3); ;">
+            <a href="https://www.google.com/maps/place/McWay+Falls/@36.1579002,-121.6735613,18z/data=!3m1!4b1!4m6!3m5!1s0x808d803496d56575:0x6668b96e4335c2f5!8m2!3d36.1578259!4d-121.6721628!16s%2Fm%2F03gyz90?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
+          </div>
+        </div>
+      </div>
+
+   <section>
+    <article>
+        <div class="card mb-3" style=" max-width: 1068px; width: 100%; height: auto; margin-top: 20px; background-image: url(assets/Surf\ imagen\ fondo.avif)">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <iframe class="VideoPlaya" width="100%" height="315" src="https://www.youtube.com/embed/b6XpL7rCBKc?si=7JIQlV_ICJC-XpoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Playas Paradisiacas</h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore ratione quisquam illo sed officia molestias enim nulla non, odio voluptate soluta nihil perferendis dolorem quo sit voluptatem eligendi sunt ipsam placeat dolores esse. Dolorum sapiente rerum possimus repudiandae id voluptatem odio voluptatum natus nihil, ipsam consequatur fugit at nesciunt earum in vero optio suscipit nemo cum, ducimus architecto totam. Itaque quam nam enim, magnam fugiat placeat inventore blanditiis? Hic delectus saepe aspernatur id error magni! Non neque unde a cupiditate ducimus, quidem aliquam, cum sint nisi mollitia itaque qui amet blanditiis, voluptas tenetur. Incidunt, neque. Asperiores dolorum repellendus modi maxime impedit unde debitis, esse eligendi veniam sunt culpa libero sit quibusdam vero voluptatibus, fugiat ipsum? Dolores tenetur fugiat a accusantium?</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </article>
+</section>
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

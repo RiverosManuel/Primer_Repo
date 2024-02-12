@@ -3,59 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Mountains</title>
 </head>
 <body>
     <header>
-        <nav>
-        <h1>AgenciaRivers</h1>
-            <ul class="nav-list">
-                <li> <a href="index.html">Home</a></li>
-                <li> <a href="Beach.html">Beachs</a></li>
-                <li> <a href="Mountains.html">Mountains</a></li>
-                <li> <a href="Glaciers.html">Glaciers</a></li>
-                <li> <a href="Activities.html">Activities</a></li>
-                <li> <a href="Contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr> 
+        <nav class="navbar bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AgenciaRivers</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Beach.html"> Beach</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Mountains.html"> Mountains</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Glaciers.html"> Glaciers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html"> Contact</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Activities
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="Activities.html/juegos-de-surf">Surf</a></li>
+                        <li><a class="dropdown-item" href="Activities.html">Trekking</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="Activities.html">Navegacion</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Home</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Beach.html">Beach</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Mountains.html">Mountains</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Glaciers.html">Glaciers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Activities.html">Activities</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+        </header>
     
     <section class="grid">
-        <article class="box b1">
-            <div>
+        <article class="box-b1">
+            <div class="hero-p">
                 <h2> Montaña de Moena</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore doloremque veniam ipsa adipisci corporis! Deserunt perferendis libero accusamus et?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, tempore </p>
                 <a href="https://www.google.com/maps/place/38035+Moena,+Trentino,+Italia/@46.3760569,11.6591432,15z/data=!3m1!4b1!4m6!3m5!1s0x4778661ad0e64935:0x9ee2cf68d4d9c32!8m2!3d46.37642!4d11.6615999!16zL20vMGc5X2Zi?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
             </div>
             <img src="assets/images/montaña 1.avif">
             </article>
-        <article class="box b2">
+        <article class="box-b2">
             <div>
                 <h2>Montaña de Poon Hill</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necess</p>
                 <a href="https://www.google.com/maps/place/Poon+Hill/@28.4001961,83.6892986,15z/data=!3m1!4b1!4m6!3m5!1s0x3995fb901538e619:0x8c8090bd893ea23a!8m2!3d28.4001966!4d83.6892986!16s%2Fg%2F11g6q52b68?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
             </div>
             <img src="assets/images/montaña 2.avif">
         </article>
-        <article class="box b3">
+        <article class="box-b3">
             <div>
                 <h2>Montaña de Munkebu</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
+                <p>Lorem ipsum dolor sit amet consectr, adipisicing elit. Amet earum necess</p>
                 <a href="https://www.google.com/maps/place/Munkebu/@67.9276441,13.0034293,17z/data=!3m1!4b1!4m6!3m5!1s0x45de235b2df6cda3:0xd1ddf85b63b8add0!8m2!3d67.9276441!4d13.0034293!16s%2Fg%2F11h1t7k4c?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
             </div>
             <img src="assets/images/montaña 3.avif">
         </article>
-        <article class="box b4">
+        <article class="box-b4">
             <div>
                 <h2>Montaña de Sierra Nevada</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
+                <p>Lorem ipsum dolor si amet adipg elit. Amet earum necess ipsobis fugit inv ab mol ea aliq repret!</p>
                 <a href="https://www.google.com/maps/place/Sierra+Buttes+North/@39.5936266,-120.657522,15z/data=!3m1!4b1!4m6!3m5!1s0x809c713422c7632b:0x875d689e92ffc66e!8m2!3d39.5936111!4d-120.6472222!16s%2Fg%2F1vgqdbl0?entry=ttu" target="_blank"> <button type="submit">Ir</button></a>
             </div>
             <img src="assets/Montaña 4.avif">
         </article>
-        <article class="box b5">
+        <article class="box-b5">
             <div>
                 <h2>Montaña de Lake Luise</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
@@ -63,7 +129,7 @@
             </div>
             <img src="assets/montaña 5 lake louise.avif">
         </article>
-        <article class="box b6">
+        <article class="box-b6">
             <div>
                 <h2>Montaña de Bries Lake</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet earum necessitatibus ipsam, nobis fugit inventore ab molestias ea aliquam reprehenderit!</p>
@@ -76,7 +142,7 @@
        <article class="container-if">
        <iframe width="560" height="315" src="https://www.youtube.com/embed/lBrzY-8Y9nE?si=uIy5eGuT6njHO8kN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
        </article>
-       
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </body>
 </html>

@@ -10,15 +10,138 @@ body {
     color: white;
      margin: 10px;
 }
+
+
+.hero-container{
+    margin-top: 20px;
+}
+
+.hero-card-content {
+    background-color: blanchedalmond;
+    color: #111;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+.hero-card {
+    display: flex;
+}
+.hero-card img {
+    width:50%;
+    height: 600px;
+    object-fit: cover;
+}
+
+@media ( max-width:1024px) {
+    .hero-card-content, {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(238, 137, 15);
+        color: #111;
+    }
+}
+
+@media ( max-width:768px) {
+    .hero-card, .hero-card img{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+@media ( max-width:480px) {
+    .hero-card-content{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blanchedalmond;
+        color: #030303;
+    }
+}
+.card-container {
+    padding: 10px;
+    background-color: blanchedalmond;
+    color: #111;
+    border: 5px solid rgb(15, 12, 12);
+    border-radius: 5%;
+    border-color: rgb(245, 244, 242);
+    width: 500px;
+    height: 100%;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+}
+
+.card-container img {
+    width: 95%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5%;
+    gap: 25px;
+}
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+.card-footer a {
+    background-color: rgb(8, 8, 8);;
+    color: black;
+    text-align: center;
+    padding: 10px;
+    width: 49%;
+}
+button {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(241, 247, 248);
+    color: rgb(14, 12, 12);
+    width: 50px;
+    height: 20px; 
+    align-self: flex-end;
+}
+
+.col-md-4 {
+    background-color: blanchedalmond;
+
+}
 .box {
-    width: 100%;
-    height:100%;
+    width: 300px, 100%;
+    height: 250px;
     border: 1px solid white;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     position: relative;
+}
+@media ( max-width::268px) {
+.box, .box-div {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+
+}
+
+}
+
+
+
+
+
+
+.hero-p {
+    width: 100%;
+    height:auto;
 }
 
 .box img {
@@ -34,52 +157,111 @@ body {
     width: 100%;
     height: 100%;
     display: grid;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: wrap;
     place-items: center;
     opacity: 0.5;
 }
 
 .b1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 400px;
+    height: 100%;
     grid-area: a1;
 }
 
 .b2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 100%;
     grid-area: a2;
 }
 
 .b3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
     grid-area: a3;
+    gap left: 10px
 }
 
 .b4 {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
     grid-area: a4;
 }
 
 .b5 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
     grid-area: a5;
 }
 
 .b6 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 100%;
+    gap: 10px;
     grid-area: a6;
+}
+@media ( max-width:1024px) {
+    .b1 .b2 .b3 .b4 .b5 .b6 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+@media ( max-width:768px) {
+    .b1 .b2 .b3 .b4 .b5 .b6{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+}
+@media ( max-width:480px) {
+    .b1 .b2 .b3 .b4 .b5 .b6{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(4 200px);
+    grid-template-columns: repeat(3 200px);
     grid-template-rows: repeat(3, 300px) ;
+    margin-top: 10px;
     gap: 10px;
     place-items: end center;
     grid-template-areas: 
-    'a6 a6 a3 a3'
-    'a4 a2 a3 a3'
-    'a1 a1 a5 a5';
+    'a1 a2 a3'
+    'a4 a2 a6'
+    'a4 a5 a6';
 }
 
-.container-if {
-    display: flex;
-    padding: 20px;
-    gap: 20px;
-    width: 800px;
-    height: 200px;
+.container-v {
+    align-items: center;
+    justify-content: center;
 }
 .container-m {
     display: grid;
@@ -90,18 +272,20 @@ body {
     'Trekking Navegacion';
     gap: 10px;
     padding: 10px;
+    flex-wrap: wrap;
 }
 
-.box-  {
+.box-m1, .box-m2, .box-m3{
     border: 1px solid white;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     font-size: 24px;
     min-height: 250px
 }
 
-.m1, img {
+.box-m1, img {
     grid-area: Surf;
     background-image: url(../assets/Surf\ imagen\ fondo.avif);
     background-size: cover;
@@ -112,7 +296,7 @@ body {
     gap: 5px;
  }
 
-.m2, img {
+.box-m2, img {
     grid-area: Trekking;
     background-image: url(../assets/Trekking\ fondo.avif);
     background-size: cover;
@@ -123,7 +307,7 @@ body {
     width: auto;
 }
 
-.m3, img {
+.box-m3, img {
     grid-area: Navegacion;
     background-image: url(../assets/navegacion\ fondo.avif);
     background-size: cover;
@@ -138,6 +322,7 @@ body {
 
 @media ( max-width:1024px) {
     .box- {
+        margin-left: 15px;
         background-color: rgb(238, 137, 15);
         color: #111;
     }
@@ -204,10 +389,16 @@ h4 {
 
 .bot {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     width: 700px;
     background-image: url(../assets/images/Ola\ cambiar.jpeg);
+    width: 70%;
+    height: auto;
     padding: 15px;
-    border: 2px solid white;
+    border: 5px solid white;
     border-radius: 5%;
     gap: 15px;
     margin: 20px;
@@ -247,80 +438,3 @@ h4 {
     height: 100%;
     margin: 10px;
 }
-
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    height: 90vh;
-}
-
-.card-container img {
-    width: 95%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 5%;
-    gap: 25px;
-    
-}
-.card-footer {
-    display: flex;
-    justify-content: center;
-}
-.card-footer a {
-    background-color: blanchedalmond;
-    color: black;
-    text-align: center;
-    padding: 10px;
-    width: 49%;
-}
-button {
-    background-color: rgb(241, 247, 248);
-    color: rgb(14, 12, 12);
-    width: 70px;
-    height: 30px; 
-    align-self: flex-end;
-}
-
-
-
-
-
-.Volver {
-    text-align: right;
-
-}
-
-.barras {
-   background-color: rgb(241, 238, 238);
-   padding: 25px 45px;
-   text-decoration: aqua;
-}
-
-.hero-container {
-    margin-top: 20px;
-}
-
-.hero-card {
-    display: flex;
-}
-
-.hero-card img {
-    width: 50%;
-    height: 400px;
-    object-fit: cover;
-}
-.hero-card-content {
-    background-color: blanchedalmond;
-    color: black;
-    text-decoration-color:#111;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    justify-content: space-between;
-}
-
-

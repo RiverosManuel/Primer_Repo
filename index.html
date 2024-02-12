@@ -3,70 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>AgenciaRivers</title>
 </head>
-<body>
+<header>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AgenciaRivers</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Beach.html"> Beach</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Mountains.html"> Mountains</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Glaciers.html"> Glaciers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html"> Contact</a>
+                  </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Activities
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="Activities.html/juegos-de-surf">Surf</a></li>
+                    <li><a class="dropdown-item" href="Activities.html">Trekking</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="Activities.html">Navegacion</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-    <header>
-            <nav>
-            <h1>AgenciaRivers</h1>
-                <ul class="nav-list">
-                    <li> <a href="index.html">Home</a></li>
-                    <li> <a href="Beach.html">Beachs</a></li>
-                    <li> <a href="Mountains.html">Mountains</a></li>
-                    <li> <a href="Glaciers.html">Glaciers</a></li>
-                    <li> <a href="activities.html">Activities</a></li>
-                    <li> <a href="Contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        <hr> 
-    
-        <section class="hero-container">
-            <article class="hero-card">
-                <img src="assets/images/pasport.avif">
-                <div class="hero-card-content">
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi perferendis laboriosam at delectus, perspiciatis expedita asperiores voluptas dolor, ut sapiente aspernatur, deserunt beatae fugiat! Vitae expedita libero illo distinctio necessitatibus, eos in nemo odit molestiae sit, quo, neque quia magni praesentium ut maiores deserunt ad voluptas? Necessitatibus unde magni eius atque ipsum praesentium ipsa hic recusandae nihil nostrum aliquid at asperiores fuga autem esse sapiente illum inventore quia veritatis, rerum dolores aspernatur optio error! Exercitationem nam repudiandae recusandae suscipit numquam velit qui. Architecto nisi, doloribus quas asperiores dolor impedit sed omnis sit enim ab ullam, perferendis expedita aliquam eaque illum! Reprehenderit dolores magnam, explicabo ipsa inventore laudantium, provident soluta aperiam earum sapiente molestiae debitis voluptatem nulla maxime, beatae dicta praesentium! Expedita fugiat facere nesciunt obcaecati provident, necessitatibus exercitationem repellendus quidem.</p>
-                    <d> Lorem ipsum! Amet consectetur distinc error! Ex similique quidem tenetur in corrupti fugiat unde necessitatibus minus excepturi hic officia exercitationem dolorem culpa laudantium saepe consequatur, autem nulla nostrum. Consequatur, sapiente. Ratione, alias labore! Asperiores natus sunt nulla excepturi incidunt, praesentium, laudantium dolorem cum pariatur consequuntur id in nihil voluptatem dignissimos perspiciatis nam assumenda? Eveniet veniam nam delectus maxime sed blanditiis placeat eius rerum, laborum nulla, in repellendus fuga odio dolores, aperiam voluptate dolor porro architecto sint corrupti! Consequuntur architecto quos aliquid illo, maxime, sit neque delectus placeat autem sunt laboriosam, voluptatibus recusandae voluptatem veniam quasi. Culpa reiciendis rem blanditiis, repellendus ad vitae, quasi hic itaque labore illum ullam odit earum adipisci sequi atque sit? Officiis delectus sequi corporis, velit facere quas iusto quo molestiae ut nesciunt magnam ratione pariatur iure officia hic obcaecati veritat
-                </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Home</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Beach.html">Beach</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Mountains.html">Mountains</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Glaciers.html">Glaciers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Activities.html">Activities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+    </header>
+
+<main>
+
+    <section class="hero-container">
+        <article class="hero-card">
+            <img src="assets/images/pasport.avif">
+            <div class="hero-card-content">
+                <p>Lorem ipsum dolor, perspiciatis expedita asperiores voluptas dolor, ut sapiente aspernatur, deserunt beatae fugiat! Vitae expedita libero illo distinctio necessitatibus, eos in nemo odit molestiae sit, quo, neque quia magni praesentium ut maiores deserunt ad voluptas? Necessitatibus unde magni eius atque ipsum praesentium ipsa hic recusandae nihil nostrum aliquid at asperiores fuga autem esse sapiente illum inventore quia veritatis, rerum dolores aspernatur optio error! Exercitationem nam repudiandae recusandae suscipit numquam velit qui. Architecto nisi, doloribus quas asperiores dolor impedit sed omnis sit enim ab ullam, perferendis expedita aliquam eaque illum! Reprehenderit dolores magnam, explicabo ipsa inventore laudantium, provident soluta aperiam earum sapiente molestiae debitis voluptatem nulla maxime, beatae dicta praesentium! Expedita fugiat facere nesciunt obcaecati provident, necessitatibus exercitationem repellendus quidem.</p>
+                <p>Lorem ipsis nostrum asnus expo maxime delectus laudantium aliquam quibusdam accusamus laborum ratione, vero nihil explicabo eum unde sed beatae numquam. Qui distinctio sed voluptatibus sequi repellendus sit ipsum quam. Repellat accusamus culpa optio aperiam accusantium distinctio cum? Earum laboriosam magni repudiandae, explicabo perferendis fugit commodi ex. Veniam impedit laudantium debitis adipisci eaque, voluptatibus nemo consectetur distinctio placeat odio!</p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi nostrum quasi veritatis perspiciatis, dolores reiciendis cupiditate, magni molestias eum alias ipsa temporibus, ab debitis sunt eos omnis cumque. Maiores, obcaecati.</p>
+            </div>
+        </article>
+    </section>
+
+        <section class="container">
+            <article class="card-container">
+                <h4> Beachs </h4>
+                <img src="assets/images/Playa Home.jpg" alt="">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod mollitia porro </p>
+                <a href="https://viajes.nationalgeographic.com.es/a/mejores-mas-bonitas-playas-mundo_7481" target="_blank"> <button type="submit">Ir</button></a>
+            </article>
+
+            <article class="card-container">
+                <h4> Mountains </h4>
+                <img src="assets/images/Montaña home.jpg">
+                 <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod mollitia porro atque corrupti</p>
+                <a href="https://www.elmundo.es/como/2023/12/11/65770c5ae4d4d886088b45a3.html" target="_blank"> <button type="submit">Ir</button>
+            </article>
+
+            <article class="card-container">
+                <h4> Glaciers </h4>
+                <img src="assets/images/photo-1520208422220-d12a3c588e6c.avif">
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod Placeat rem?</p>
+                <a href="https://www.descubrir.com/los-glaciares-mas-asombrosos-del-mundo/" target="_blank"> <button type="submit">Ir</button>
+            </article>
         </section>
 
-        <main>
-            <section class="container">
-                <article class="card-container">
-                    <h4> Beachs </h4>
-                    <img src="assets/images/Playa Home.jpg" alt="">
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod mollitia porro atque corrupti neque! Placeat rem facilis, sed doloremque labore voluptas porro modi, commodi, nihil esse dolorum qui quisquam quaerat?</p>
-                    <a href="https://viajes.nationalgeographic.com.es/a/mejores-mas-bonitas-playas-mundo_7481" target="_blank"> <button type="submit">Ir</button></a>
-                </article>
 
-                <article class="card-container">
-                    <h4> Mountains </h4>
-                    <img src="assets/images/Montaña home.jpg">
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod mollitia porro atque corrupti neque! Placeat rem facilis, sed doloremque labore voluptas porro modi, commodi, nihil esse dolorum qui quisquam quaerat?</p>
-                    <a href="https://www.elmundo.es/como/2023/12/11/65770c5ae4d4d886088b45a3.html" target="_blank"> <button type="submit">Ir</button>
-                </article>
+</main>
+    
 
-                <article class="card-container">
-                    <h4> Glaciers </h4>
-                    <img src="assets/images/photo-1520208422220-d12a3c588e6c.avif">
-                    <div>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod mollitia porro atque corrupti neque! Placeat rem facilis, sed doloremque labore voluptas porro modi, commodi, nihil esse dolorum qui quisquam quaerat?</p>
-                    </div>
-                    <a href="https://www.descubrir.com/los-glaciares-mas-asombrosos-del-mundo/" target="_blank"> <button type="submit">Ir</button></a>
-                    
-                </article>
-                
-                <article class="card-container">
-                    <h4> Activities </h4>
-                    <img src="assets/Activities.jpg">
-                    <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod mollitia porro atque corrupti neque! Placeat rem facilis, sed doloremque labore voluptas porro modi, commodi, nihil esse dolorum qui quisquam quaerat?</p>
-                    
-                </article>
-            </section>
-        </main>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>
